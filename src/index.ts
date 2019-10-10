@@ -1,10 +1,10 @@
-import {Prueba} from './application';
+import {PruebaApplication} from './application';
 import {ApplicationConfig} from '@loopback/core';
 
-export {Prueba};
+export {PruebaApplication};
 
 export async function main(options: ApplicationConfig = {}) {
-  const app = new Prueba(options);
+  const app = new PruebaApplication(options);
   await app.boot();
   await app.start();
 
